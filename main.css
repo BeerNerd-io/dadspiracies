@@ -1,0 +1,482 @@
+/* Reset and Base Styles */
+:root {
+    --primary-color: #a9a42c;
+    --secondary-color: #000000;
+    --background-color: #FFFFFF;
+    --surface-color: #1f1f1f;
+    --on-background: #000000;
+    --on-surface: #e0e0e0;
+    --elevation-1: 0 2px 5px rgba(0,0,0,0.2);
+    --elevation-2: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+body {
+    font-family: 'Exo', sans-serif;
+    line-height: 1.6;
+    color: var(--on-background);
+    background-color: var(--background-color);
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Typography */
+h1, h2, h3 {
+    font-family: 'Orbitron', sans-serif;
+    margin-bottom: 1rem;
+}
+
+h1 {
+    font-size: 3rem;
+    color: var(--primary-color);
+}
+
+h2 {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+}
+
+h3 {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+}
+
+/* Header and Navigation */
+.app-bar {
+    background-color: var(--surface-color);
+    box-shadow: var(--elevation-1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.app-bar-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.app-title {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin-left: 1.5rem;
+}
+
+.nav-links a {
+    color: var(--on-surface);
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: var(--primary-color);
+}
+
+/* Hero Section */
+.hero {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 80px; /* Adjusted to move content down */
+}
+
+.hero-content {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 2rem;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.hero-content h1, .hero-content p {
+    color: var(--on-surface); /* Ensure text is visible on dark background */
+}
+
+/* Buttons */
+.btn {
+    background-color: var(--primary-color);
+    color: var(--surface-color); /* Ensure contrast with button background */
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    display: inline-block;
+}
+
+.btn:hover {
+    background-color: #8a8623;
+    transform: translateY(-3px);
+}
+
+/* Cards */
+.card {
+    background-color: var(--surface-color);
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: var(--elevation-1);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    padding: 1.5rem;
+}
+
+.card:hover {
+    box-shadow: var(--elevation-2);
+    transform: translateY(-5px);
+}
+
+.card h3 {
+    color: var(--primary-color);
+}
+
+.card p, .card .price {
+    color: var(--on-surface); /* Ensure text is visible on card background */
+}
+
+/* Sections */
+.section {
+    padding: 4rem 0;
+    background-color: var(--background-color);
+}
+
+/* Footer */
+footer {
+    background-color: var(--surface-color);
+    color: var(--on-surface);
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.social-icons {
+    margin-top: 1rem;
+}
+
+.social-icons a {
+    color: var(--on-surface);
+    font-size: 1.5rem;
+    margin: 0 0.5rem;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: var(--primary-color);
+    transform: scale(1.2);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .app-bar-content {
+        flex-wrap: wrap;
+    }
+
+    .hero {
+        height: auto;
+        min-height: 100vh;
+    }
+}
+
+/* Accessibility */
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.fade-in {
+    animation: fadeIn 0.5s ease-in;
+}
+
+/* Card Grid */
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+/* Cards */
+.card {
+    background-color: var(--surface-color);
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: var(--elevation-1);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.card:hover {
+    box-shadow: var(--elevation-2);
+    transform: translateY(-5px);
+}
+
+.card-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 1.5rem;
+}
+
+.card h3 {
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+.card p {
+    color: var(--on-surface);
+    margin-bottom: 1rem;
+}
+
+.credibility-score {
+    color: #ff9800;
+    margin-bottom: 1rem;
+}
+
+/* Newsletter Popup */
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+    z-index: 1001;
+}
+
+.popup-content {
+    background-color: var(--background-color);
+    padding: 2rem;
+    border-radius: 15px;
+    max-width: 400px;
+    text-align: center;
+    position: relative;
+}
+
+.popup-content h3 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.popup-content p {
+    margin-bottom: 1rem;
+}
+
+#newsletter-form input[type="email"] {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid var(--surface-color);
+    border-radius: 5px;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--on-background);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .card-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .card-image {
+        height: 150px;
+    }
+}
+
+/* Bento Box Grid */
+.bento-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.bento-item {
+    background-color: var(--surface-color);
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: var(--elevation-1);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    position: relative; /* Ensure relative positioning */
+}
+
+.bento-item.square {
+    aspect-ratio: 1 / 1; /* Keep square aspect ratio for resources section */
+}
+
+.bento-item.tall {
+    height: calc(2 * (100% / 3) - 1rem); /* Make the height twice the size of a square box */
+}
+
+.bento-item .card-image {
+    width: 100%;
+    height: 50%; /* Adjust image height to fit taller box */
+    object-fit: cover;
+}
+
+.bento-item .card-content {
+    padding: 1rem;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%; /* Ensure full height */
+}
+
+.bento-item h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.bento-item p {
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+    flex-grow: 1; /* Push the button to the bottom */
+    overflow: hidden; /* Prevent text overflow */
+    text-overflow: ellipsis; /* Show ellipsis for overflowing text */
+    display: -webkit-box; /* Multi-line ellipsis */
+    -webkit-line-clamp: 3; /* Limit to 3 lines */
+    -webkit-box-orient: vertical; /* Multi-line ellipsis */
+    line-clamp: 3; /* Standard property for compatibility */
+    box-orient: vertical; /* Standard property for compatibility */
+}
+
+.bento-item .btn {
+    align-self: flex-start;
+    margin-top: auto; /* Push the button to the bottom */
+    margin-bottom: 0; /* Ensure no margin at the bottom */
+}
+
+/* Icon styles */
+.bento-item .icon {
+    font-size: 2rem;
+    color: #a9a42c; /* Venom green */
+    margin-bottom: 0.5rem; /* Reduce margin to save space */
+}
+
+/* Price styles */
+.bento-item .price {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+/* Credibility score styles */
+.bento-item .credibility-score {
+    font-size: 0.8rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 900px) {
+    .bento-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .bento-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Update the grid for the episodes (podcasts) section */
+.episodes-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.episodes-grid .episode-card {
+    grid-column: span 1; /* Make each card span 1 column */
+    height: 500px; /* Make the cards longer than they are wide */
+}
+
+/* Update the grid for the shop section */
+.shop-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.shop-grid .product-card {
+    grid-column: span 1; /* Make each card span 1 column */
+    height: 500px; /* Make the cards longer than they are wide */
+}
+
+/* Ensure the resource grid layout remains unchanged */
+.resources-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.resources-grid .resource-card {
+    grid-column: span 1; /* Make each card span 1 column */
+    height: 300px; /* Make the cards longer than they are wide */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .episodes-grid, .shop-grid, .resources-grid {
+        grid-template-columns: 1fr; /* Stack the cards on smaller screens */
+    }
+}

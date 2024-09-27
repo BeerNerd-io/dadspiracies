@@ -1,0 +1,694 @@
+{
+    "site": {
+        "title": "Dadspiracies",
+        "description": "Dive deep into the most intriguing conspiracy theories with a fun twist!",
+        "baseUrl": "https://www.dadspiracies.com",
+        "theme": "futuristic",
+        "colors": {
+            "primary": "#a9a42c",
+            "secondary": "#000000",
+            "background": "#FFFFFF"
+        },
+        "fonts": {
+            "heading": "'Orbitron', sans-serif",
+            "body": "'Roboto', sans-serif"
+        },
+        "icons": {
+            "favicon": "assets/icons/favicon.ico",
+            "appleTouchIcon": "assets/icons/apple-touch-icon.png",
+            "manifest": "manifest.json"
+        }
+    },
+    "layout": {
+        "header": {
+            "logo": {
+                "text": "Dadspiracies",
+                "link": "#home",
+                "style": {
+                    "fontFamily": "'Orbitron', sans-serif",
+                    "fontSize": "1.5rem",
+                    "color": "#00ffea",
+                    "textDecoration": "none"
+                }
+            },
+            "navigation": {
+                "links": [
+                    { "name": "Home", "href": "#home" },
+                    { "name": "About", "href": "#about" },
+                    { "name": "Episodes", "href": "#episodes" },
+                    { "name": "Resources", "href": "#resources" },
+                    { "name": "Shop", "href": "#shop" }
+                ],
+                "style": {
+                    "listStyle": "none",
+                    "display": "flex",
+                    "gap": "2rem"
+                },
+                "linkStyle": {
+                    "color": "#e0e0e0",
+                    "textDecoration": "none",
+                    "fontSize": "1rem",
+                    "transition": "color 0.3s ease"
+                },
+                "linkHoverStyle": {
+                    "color": "#00ffea"
+                }
+            },
+            "mobileMenu": {
+                "enabled": true,
+                "icon": "assets/icons/menu.svg",
+                "style": {
+                    "display": "none"
+                }
+            },
+            "background": {
+                "color": "#1f1f1f",
+                "shadow": "0 2px 5px rgba(0,0,0,0.5)"
+            }
+        },
+        "footer": {
+            "content": "&copy; 2024 Dadspiracies. All rights reserved.",
+            "socialLinks": [
+                { "platform": "Twitter", "href": "#", "icon": "assets/icons/twitter.svg" },
+                { "platform": "Instagram", "href": "#", "icon": "assets/icons/instagram.svg" },
+                { "platform": "Facebook", "href": "#", "icon": "assets/icons/facebook.svg" }
+            ],
+            "style": {
+                "backgroundColor": "#1f1f1f",
+                "color": "#e0e0e0",
+                "textAlign": "center",
+                "padding": "2rem 1rem"
+            },
+            "socialLinkStyle": {
+                "margin": "0 0.5rem",
+                "display": "inline-block",
+                "transition": "transform 0.3s ease"
+            },
+            "socialLinkHoverStyle": {
+                "transform": "scale(1.2)"
+            },
+            "iconSize": {
+                "width": "24px",
+                "height": "24px"
+            }
+        }
+    },
+    "sections": {
+        "home": {
+            "id": "home",
+            "class": "home-section",
+            "background": {
+                "image": "assets/images/futuristic-background.jpg",
+                "size": "cover",
+                "position": "center",
+                "repeat": "no-repeat"
+            },
+            "content": {
+                "alignment": "center",
+                "elements": [
+                    {
+                        "type": "heading",
+                        "text": "Welcome to Dadspiracies",
+                        "style": {
+                            "fontFamily": "'Orbitron', sans-serif",
+                            "fontSize": "3rem",
+                            "color": "#00ffea",
+                            "marginBottom": "1rem"
+                        }
+                    },
+                    {
+                        "type": "paragraph",
+                        "text": "Dive deep into the most intriguing conspiracy theories with a fun twist!",
+                        "style": {
+                            "fontSize": "1.2rem",
+                            "marginBottom": "2rem"
+                        }
+                    },
+                    {
+                        "type": "button",
+                        "text": "Listen Now",
+                        "href": "#episodes",
+                        "style": {
+                            "backgroundColor": "#00ffea",
+                            "color": "#121212",
+                            "padding": "0.75rem 1.5rem",
+                            "border": "none",
+                            "borderRadius": "25px",
+                            "textDecoration": "none",
+                            "fontWeight": "bold",
+                            "transition": "background-color 0.3s ease, transform 0.3s ease"
+                        },
+                        "hoverStyle": {
+                            "backgroundColor": "#00c4b4",
+                            "transform": "translateY(-3px)"
+                        }
+                    }
+                ]
+            }
+        },
+        "about": {
+            "id": "about",
+            "class": "about-section",
+            "backgroundColor": "#1f1f1f",
+            "content": {
+                "container": {
+                    "maxWidth": "1200px",
+                    "margin": "auto",
+                    "elements": [
+                        {
+                            "type": "heading",
+                            "text": "About Us",
+                            "style": {
+                                "fontFamily": "'Orbitron', sans-serif",
+                                "fontSize": "2.5rem",
+                                "color": "#00ffea",
+                                "marginBottom": "1rem"
+                            }
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "Dadspiracies is hosted by two friends who love unraveling the truth behind the world's most fascinating conspiracies. Join us for a humorous and insightful journey through hidden truths and mysterious phenomena.",
+                            "style": {
+                                "fontSize": "1rem",
+                                "marginBottom": "2rem"
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        "episodes": {
+            "id": "episodes",
+            "class": "episodes-section",
+            "backgroundColor": "#1f1f1f",
+            "content": {
+                "container": {
+                    "maxWidth": "1200px",
+                    "margin": "auto",
+                    "elements": [
+                        {
+                            "type": "heading",
+                            "text": "Episodes",
+                            "style": {
+                                "fontFamily": "'Orbitron', sans-serif",
+                                "fontSize": "2.5rem",
+                                "color": "#00ffea",
+                                "marginBottom": "1rem"
+                            }
+                        },
+                        {
+                            "type": "grid",
+                            "class": "episodes-grid",
+                            "columns": "repeat(auto-fit, minmax(250px, 1fr))",
+                            "gap": "2rem",
+                            "items": [
+                                {
+                                    "type": "card",
+                                    "class": "episode-card",
+                                    "elements": [
+                                        {
+                                            "type": "image",
+                                            "src": "assets/images/episode1.jpg",
+                                            "alt": "Episode 1",
+                                            "style": {
+                                                "width": "100%",
+                                                "borderRadius": "10px",
+                                                "marginBottom": "1rem"
+                                            }
+                                        },
+                                        {
+                                            "type": "heading",
+                                            "text": "Episode Title",
+                                            "style": {
+                                                "fontSize": "1.5rem",
+                                                "marginBottom": "0.5rem",
+                                                "color": "#00ffea"
+                                            }
+                                        },
+                                        {
+                                            "type": "paragraph",
+                                            "text": "Brief description of the episode content.",
+                                            "style": {
+                                                "fontSize": "0.9rem",
+                                                "marginBottom": "1rem"
+                                            }
+                                        },
+                                        {
+                                            "type": "button",
+                                            "text": "Listen",
+                                            "href": "#",
+                                            "style": {
+                                                "backgroundColor": "#00ffea",
+                                                "color": "#121212",
+                                                "padding": "0.5rem 1rem",
+                                                "border": "none",
+                                                "borderRadius": "15px",
+                                                "textDecoration": "none",
+                                                "fontWeight": "bold",
+                                                "transition": "background-color 0.3s ease, transform 0.3s ease"
+                                            },
+                                            "hoverStyle": {
+                                                "backgroundColor": "#00c4b4",
+                                                "transform": "translateY(-3px)"
+                                            }
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "card",
+                                    "class": "episode-card",
+                                    "elements": [
+                                        {
+                                            "type": "image",
+                                            "src": "assets/images/episode2.jpg",
+                                            "alt": "Episode 2",
+                                            "style": {
+                                                "width": "100%",
+                                                "borderRadius": "10px",
+                                                "marginBottom": "1rem"
+                                            }
+                                        },
+                                        {
+                                            "type": "heading",
+                                            "text": "Another Episode Title",
+                                            "style": {
+                                                "fontSize": "1.5rem",
+                                                "marginBottom": "0.5rem",
+                                                "color": "#00ffea"
+                                            }
+                                        },
+                                        {
+                                            "type": "paragraph",
+                                            "text": "Brief description of another episode content.",
+                                            "style": {
+                                                "fontSize": "0.9rem",
+                                                "marginBottom": "1rem"
+                                            }
+                                        },
+                                        {
+                                            "type": "button",
+                                            "text": "Listen",
+                                            "href": "#",
+                                            "style": {
+                                                "backgroundColor": "#00ffea",
+                                                "color": "#121212",
+                                                "padding": "0.5rem 1rem",
+                                                "border": "none",
+                                                "borderRadius": "15px",
+                                                "textDecoration": "none",
+                                                "fontWeight": "bold",
+                                                "transition": "background-color 0.3s ease, transform 0.3s ease"
+                                            },
+                                            "hoverStyle": {
+                                                "backgroundColor": "#00c4b4",
+                                                "transform": "translateY(-3px)"
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            }
+        },
+        "resources": {
+            "id": "resources",
+            "class": "resources-section",
+            "backgroundColor": "#1f1f1f",
+            "content": {
+                "container": {
+                    "maxWidth": "1200px",
+                    "margin": "auto",
+                    "elements": [
+                        {
+                            "type": "heading",
+                            "text": "Resources",
+                            "style": {
+                                "fontFamily": "'Orbitron', sans-serif",
+                                "fontSize": "2.5rem",
+                                "color": "#00ffea",
+                                "marginBottom": "1rem"
+                            }
+                        },
+                        {
+                            "type": "grid",
+                            "class": "resources-grid",
+                            "columns": "repeat(auto-fit, minmax(250px, 1fr))",
+                            "gap": "2rem",
+                            "items": [
+                                {
+                                    "type": "card",
+                                    "class": "resource-card",
+                                    "elements": [
+                                        {
+                                            "type": "heading",
+                                            "text": "Resource Title",
+                                            "style": {
+                                                "fontSize": "1.5rem",
+                                                "marginBottom": "0.5rem",
+                                                "color": "#00ffea"
+                                            }
+                                        },
+                                        {
+                                            "type": "paragraph",
+                                            "text": "Brief summary of the resource.",
+                                            "style": {
+                                                "fontSize": "0.9rem",
+                                                "marginBottom": "1rem"
+                                            }
+                                        },
+                                        {
+                                            "type": "button",
+                                            "text": "Explore",
+                                            "href": "#",
+                                            "style": {
+                                                "backgroundColor": "#00ffea",
+                                                "color": "#121212",
+                                                "padding": "0.5rem 1rem",
+                                                "border": "none",
+                                                "borderRadius": "15px",
+                                                "textDecoration": "none",
+                                                "fontWeight": "bold",
+                                                "transition": "background-color 0.3s ease, transform 0.3s ease"
+                                            },
+                                            "hoverStyle": {
+                                                "backgroundColor": "#00c4b4",
+                                                "transform": "translateY(-3px)"
+                                            }
+                                        },
+                                        {
+                                            "type": "div",
+                                            "class": "credibility-score",
+                                            "elements": [
+                                                {
+                                                    "type": "span",
+                                                    "text": "Credibility Score: ★★★★☆",
+                                                    "style": {
+                                                        "fontSize": "0.9rem",
+                                                        "color": "#ff9800"
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "card",
+                                    "class": "resource-card",
+                                    "elements": [
+                                        {
+                                            "type": "heading",
+                                            "text": "Another Resource",
+                                            "style": {
+                                                "fontSize": "1.5rem",
+                                                "marginBottom": "0.5rem",
+                                                "color": "#00ffea"
+                                            }
+                                        },
+                                        {
+                                            "type": "paragraph",
+                                            "text": "Brief summary of another resource.",
+                                            "style": {
+                                                "fontSize": "0.9rem",
+                                                "marginBottom": "1rem"
+                                            }
+                                        },
+                                        {
+                                            "type": "button",
+                                            "text": "Explore",
+                                            "href": "#",
+                                            "style": {
+                                                "backgroundColor": "#00ffea",
+                                                "color": "#121212",
+                                                "padding": "0.5rem 1rem",
+                                                "border": "none",
+                                                "borderRadius": "15px",
+                                                "textDecoration": "none",
+                                                "fontWeight": "bold",
+                                                "transition": "background-color 0.3s ease, transform 0.3s ease"
+                                            },
+                                            "hoverStyle": {
+                                                "backgroundColor": "#00c4b4",
+                                                "transform": "translateY(-3px)"
+                                            }
+                                        },
+                                        {
+                                            "type": "div",
+                                            "class": "credibility-score",
+                                            "elements": [
+                                                {
+                                                    "type": "span",
+                                                    "text": "Credibility Score: ★★★☆☆",
+                                                    "style": {
+                                                        "fontSize": "0.9rem",
+                                                        "color": "#ff9800"
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            }
+        },
+        "shop": {
+            "id": "shop",
+            "class": "shop-section",
+            "backgroundColor": "#1f1f1f",
+            "content": {
+                "container": {
+                    "maxWidth": "1200px",
+                    "margin": "auto",
+                    "elements": [
+                        {
+                            "type": "heading",
+                            "text": "Shop",
+                            "style": {
+                                "fontFamily": "'Orbitron', sans-serif",
+                                "fontSize": "2.5rem",
+                                "color": "#00ffea",
+                                "marginBottom": "1rem"
+                            }
+                        },
+                        {
+                            "type": "grid",
+                            "class": "shop-grid",
+                            "columns": "repeat(auto-fit, minmax(250px, 1fr))",
+                            "gap": "2rem",
+                            "items": [
+                                {
+                                    "type": "card",
+                                    "class": "product-card",
+                                    "elements": [
+                                        {
+                                            "type": "image",
+                                            "src": "assets/images/product1.jpg",
+                                            "alt": "Product 1",
+                                            "style": {
+                                                "width": "100%",
+                                                "borderRadius": "10px",
+                                                "marginBottom": "1rem"
+                                            }
+                                        },
+                                        {
+                                            "type": "heading",
+                                            "text": "Product Name",
+                                            "style": {
+                                                "fontSize": "1.5rem",
+                                                "marginBottom": "0.5rem",
+                                                "color": "#00ffea"
+                                            }
+                                        },
+                                        {
+                                            "type": "paragraph",
+                                            "text": "Brief description of the product.",
+                                            "style": {
+                                                "fontSize": "0.9rem",
+                                                "marginBottom": "1rem"
+                                            }
+                                        },
+                                        {
+                                            "type": "span",
+                                            "class": "price",
+                                            "text": "$19.99",
+                                            "style": {
+                                                "fontSize": "1.2rem",
+                                                "color": "#ff4081",
+                                                "marginBottom": "1rem"
+                                            }
+                                        },
+                                        {
+                                            "type": "button",
+                                            "text": "Buy Now",
+                                            "href": "#",
+                                            "style": {
+                                                "backgroundColor": "#00ffea",
+                                                "color": "#121212",
+                                                "padding": "0.5rem 1rem",
+                                                "border": "none",
+                                                "borderRadius": "15px",
+                                                "textDecoration": "none",
+                                                "fontWeight": "bold",
+                                                "transition": "background-color 0.3s ease, transform 0.3s ease"
+                                            },
+                                            "hoverStyle": {
+                                                "backgroundColor": "#00c4b4",
+                                                "transform": "translateY(-3px)"
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            }
+        }
+    },
+    "styles": {
+        "global": {
+            "backgroundColor": "#121212",
+            "color": "#e0e0e0",
+            "fontFamily": "'Roboto', sans-serif",
+            "lineHeight": "1.6"
+        },
+        "buttons": {
+            ".btn": {
+                "backgroundColor": "#00ffea",
+                "color": "#121212",
+                "padding": "0.75rem 1.5rem",
+                "border": "none",
+                "borderRadius": "25px",
+                "textDecoration": "none",
+                "fontWeight": "bold",
+                "transition": "background-color 0.3s ease, transform 0.3s ease"
+            },
+            ".btn:hover": {
+                "backgroundColor": "#00c4b4",
+                "transform": "translateY(-3px)"
+            }
+        },
+        "cards": {
+            ".episode-card, .resource-card, .product-card": {
+                "backgroundColor": "#2c2c2c",
+                "padding": "1.5rem",
+                "borderRadius": "15px",
+                "boxShadow": "0 4px 8px rgba(0,0,0,0.3)",
+                "transition": "transform 0.3s ease, box-shadow 0.3s ease"
+            },
+            ".episode-card:hover, .resource-card:hover, .product-card:hover": {
+                "transform": "translateY(-10px)",
+                "boxShadow": "0 8px 16px rgba(0,0,0,0.5)"
+            },
+            ".episode-card img, .resource-card img, .product-card img": {
+                "width": "100%",
+                "borderRadius": "10px",
+                "marginBottom": "1rem"
+            },
+            ".episode-card h3, .resource-card h3, .product-card h3": {
+                "fontSize": "1.5rem",
+                "marginBottom": "0.5rem",
+                "color": "#00ffea"
+            },
+            ".episode-card p, .resource-card p, .product-card p": {
+                "fontSize": "0.9rem",
+                "marginBottom": "1rem"
+            },
+            ".price": {
+                "fontSize": "1.2rem",
+                "color": "#ff4081",
+                "marginBottom": "1rem"
+            },
+            ".credibility-score": {
+                "fontSize": "0.9rem",
+                "color": "#ff9800"
+            }
+        },
+        "grid": {
+            ".episodes-grid, .resources-grid, .shop-grid": {
+                "display": "grid",
+                "gridTemplateColumns": "repeat(auto-fit, minmax(250px, 1fr))",
+                "gap": "2rem"
+            }
+        },
+        "typography": {
+            "h1": {
+                "fontFamily": "'Orbitron', sans-serif",
+                "fontSize": "3rem",
+                "color": "#00ffea",
+                "marginBottom": "1rem"
+            },
+            "h2": {
+                "fontFamily": "'Orbitron', sans-serif",
+                "fontSize": "2.5rem",
+                "color": "#00ffea",
+                "marginBottom": "1rem"
+            },
+            "h3": {
+                "fontFamily": "'Orbitron', sans-serif",
+                "fontSize": "1.5rem",
+                "color": "#00ffea",
+                "marginBottom": "0.5rem"
+            },
+            "p": {
+                "fontSize": "1rem",
+                "marginBottom": "2rem"
+            }
+        },
+        "responsive": {
+            "@media (max-width: 768px)": {
+                ".nav-links": {
+                    "display": "none",
+                    "flexDirection": "column"
+                },
+                ".menu-toggle": {
+                    "display": "flex"
+                },
+                ".home-section": {
+                    "paddingTop": "80px"
+                },
+                ".section": {
+                    "padding": "80px 20px 60px"
+                }
+            }
+        }
+    },
+    "animations": {
+        "hoverEffects": {
+            ".btn:hover": {
+                "backgroundColor": "#00c4b4",
+                "transform": "translateY(-3px)"
+            },
+            ".episode-card:hover, .resource-card:hover, .product-card:hover": {
+                "transform": "translateY(-10px)",
+                "boxShadow": "0 8px 16px rgba(0,0,0,0.5)"
+            },
+            ".social-links a:hover": {
+                "transform": "scale(1.2)"
+            }
+        }
+    },
+    "pwa": {
+        "manifest": "manifest.json",
+        "serviceWorker": "sw.js",
+        "icons": [
+            {
+                "src": "assets/icons/icon-192x192.png",
+                "sizes": "192x192",
+                "type": "image/png"
+            },
+            {
+                "src": "assets/icons/icon-512x512.png",
+                "sizes": "512x512",
+                "type": "image/png"
+            }
+        ],
+        "themeColor": "#00ffea",
+        "backgroundColor": "#121212",
+        "display": "standalone"
+    }
+}
